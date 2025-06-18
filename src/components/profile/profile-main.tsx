@@ -13,6 +13,7 @@ export const ProfileMain = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: "row"
+        flexDirection: "row",
+        gap: 20
     }
 });
