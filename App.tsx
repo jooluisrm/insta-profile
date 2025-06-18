@@ -1,12 +1,16 @@
 
 import { SafeAreaView, StyleSheet, Text, View, StatusBar } from 'react-native';
-import { Header } from './components/header/header';
+import { Header } from './src/components/header/header';
+import { ProfileMain } from './src/components/profile/profile-main';
 
 export default function App() {
     return (
         <View style={styles.container}>
             <SafeAreaView style={styles.safeArea}>
                 <Header />
+                <View style={styles.containerProfile}>
+                    <ProfileMain />
+                </View>
             </SafeAreaView>
         </View>
     );
@@ -22,5 +26,8 @@ const styles = StyleSheet.create({
     safeArea: {
         marginTop: StatusBar.currentHeight || 0,
         margin: 10
+    },
+    containerProfile: {
+        marginTop: 30
     }
 });
