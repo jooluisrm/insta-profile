@@ -7,6 +7,7 @@ import { MusicMain } from './src/components/music/music-main';
 import { Buttons } from './src/components/buttons/buttons';
 import { ButtonAddUser } from './src/components/buttons/button-addUser';
 import { StoryContainer } from './src/components/story/story-container';
+import { TableContainer } from './src/components/table/table-container';
 
 export default function App() {
     return (
@@ -24,6 +25,8 @@ export default function App() {
                     <ButtonAddUser />
                 </View>
                 <StoryContainer />
+                <TableContainer />
+                
             </SafeAreaView>
         </View>
     );
@@ -31,7 +34,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "#000000",
+        backgroundColor: "#0c0f14",
         width: "100%",
         height: "100%",
         color: "#ffffff",
