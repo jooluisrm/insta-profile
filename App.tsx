@@ -8,6 +8,7 @@ import { Buttons } from './src/components/buttons/buttons';
 import { ButtonAddUser } from './src/components/buttons/button-addUser';
 import { StoryContainer } from './src/components/story/story-container';
 import { TableContainer } from './src/components/table/table-container';
+import { FeedMain } from './src/components/feed/feed-main';
 
 export default function App() {
     return (
@@ -26,7 +27,7 @@ export default function App() {
                 </View>
                 <StoryContainer />
                 <TableContainer />
-                
+                <FeedMain />
             </SafeAreaView>
         </View>
     );
