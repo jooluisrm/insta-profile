@@ -3,6 +3,7 @@ import { SafeAreaView, StyleSheet, Text, View, StatusBar } from 'react-native';
 import { Header } from './src/components/header/header';
 import { ProfileMain } from './src/components/profile/profile-main';
 import { BioMain } from './src/components/bio/bio-main';
+import { MusicMain } from './src/components/music/music-main';
 
 export default function App() {
     return (
@@ -12,6 +13,7 @@ export default function App() {
                 <View style={styles.containerProfile}>
                     <ProfileMain />
                     <BioMain />
+                    <MusicMain />
                 </View>
             </SafeAreaView>
         </View>
