@@ -9,6 +9,7 @@ import { ButtonAddUser } from './src/components/buttons/button-addUser';
 import { StoryContainer } from './src/components/story/story-container';
 import { TableContainer } from './src/components/table/table-container';
 import { FeedMain } from './src/components/feed/feed-main';
+import { MenuMain } from './src/components/menu/menu-main';
 
 export default function App() {
     return (
@@ -28,6 +29,7 @@ export default function App() {
                 <StoryContainer />
                 <TableContainer />
                 <FeedMain />
+                <MenuMain />
             </SafeAreaView>
         </View>
     );
@@ -42,7 +44,11 @@ const styles = StyleSheet.create({
     },
     safeArea: {
         marginTop: StatusBar.currentHeight || 0,
-        margin: 10
+        marginBottom: StatusBar.currentHeight || 0,
+        margin: 10,
+        paddingTop: 10,
+        flex: 1,
+
     },
     containerProfile: {
         marginTop: 30
