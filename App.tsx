@@ -4,6 +4,8 @@ import { Header } from './src/components/header/header';
 import { ProfileMain } from './src/components/profile/profile-main';
 import { BioMain } from './src/components/bio/bio-main';
 import { MusicMain } from './src/components/music/music-main';
+import { Buttons } from './src/components/buttons/buttons';
+import { ButtonAddUser } from './src/components/buttons/button-addUser';
 
 export default function App() {
     return (
@@ -14,6 +16,11 @@ export default function App() {
                     <ProfileMain />
                     <BioMain />
                     <MusicMain />
+                </View>
+                <View style={styles.containerButtons}>
+                    <Buttons text='Editar perfil'/>
+                    <Buttons text='Compartilhar perfil'/>
+                    <ButtonAddUser />
                 </View>
             </SafeAreaView>
         </View>
@@ -33,5 +40,11 @@ const styles = StyleSheet.create({
     },
     containerProfile: {
         marginTop: 30
+    },
+    containerButtons: {
+        flexDirection: "row",
+        gap: 5,
+        marginTop: 20,
+        marginBottom: 20,
     }
 });
