@@ -6,6 +6,7 @@ import { BioMain } from './src/components/bio/bio-main';
 import { MusicMain } from './src/components/music/music-main';
 import { Buttons } from './src/components/buttons/buttons';
 import { ButtonAddUser } from './src/components/buttons/button-addUser';
+import { StoryContainer } from './src/components/story/story-container';
 
 export default function App() {
     return (
@@ -22,6 +23,7 @@ export default function App() {
                     <Buttons text='Compartilhar perfil'/>
                     <ButtonAddUser />
                 </View>
+                <StoryContainer />
             </SafeAreaView>
         </View>
     );
